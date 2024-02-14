@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content=" This Is Description For Project 3" />
+  <title>Project 3</title>
+  <!--Bootstrap File-->
+  <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+  <!--Main Css File-->
+  <link rel="stylesheet" href="./styles/main.css" />
+  <!--Icons Library-->
+  <link rel="stylesheet" href="./styles/all.min.css" />
+</head>
+
+<body>
+  <div class="home">
+    <div class="controls p-4 d-flex justify-content-between">
+      <div class="d-flex gap-3 flex-wrap coltrolIcons">
+        <button class="control settings rounded-4">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+      </div>
+    </div>
+    <div class="w-100 position-fixed top-50 start-50 translate-middle card-wrapper">
+      <div class="container h-100 card-container rounded-4">
+        <div class="card w-100 h-100 p-md-5 p-4 d-flex justify-content-center align-items-center position-relative">
+          <div class="m-0 title" data-text="ماذا حدث فى القصة؟!">
+            <span class="first-word d-inline-block">ماذا</span>
+            حدث في القصة<span class="sign">؟!</span>
+            <div class="frame-wrapper position-absolute d-flex align-items-end justify-content-center">
+              <img src="./media/images/Frame.svg" alt="giraffe-img object-fit-contain" />
+            </div>
+          </div>
+        </div>
+        <button class="play p-3 rounded-pill d-flex justify-content-center align-items-center position-absolute">
+          <i class="fa-solid fa-play"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="story w-100 position-fixed top-50 start-50 translate-middle">
+    <div class="controls p-4 d-flex justify-content-between">
+      <div class="d-flex gap-3 flex-wrap coltrolIcons">
+        <button class="control settings rounded-4">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+        <button class="control volume rounded-4">
+          <i class="fa-solid fa-volume-high volume-icon"></i>
+          <i class="fa-solid fa-volume-xmark volume-icon off"></i>
+        </button>
+      </div>
+    </div>
+    <div class="container position-fixed top-50 start-50 translate-middle">
+      <div class="wrapper d-flex gap-3">
+        <div class="btn left-button p-3 rounded-4 d-flex align-items-center justify-content-center">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="story-cards d-flex gap-3 flex-nowrap flex-grow-1">
+          <div class="card story-card rounded-4">
+            <div class="img-wrapper py-3 px-4">
+              <div class="img rounded-4 overflow-hidden">
+                <img src="./media/images/story-1.png" class="w-100 object-fit-contain" />
+              </div>
+            </div>
+            <div
+              class="text-card d-flex align-items-center justify-content-center rounded-4 py-2 text-center flex-grow-1">
+              <p class="m-0">أمنيات باندا للعام الجديد</p>
+            </div>
+          </div>
+          <div class="card story-card rounded-4">
+            <div class="img-wrapper py-3 px-4">
+              <div class="img rounded-4 overflow-hidden">
+                <img src="./media/images/story-2.png" class="w-100 object-fit-contain" />
+              </div>
+            </div>
+            <div
+              class="text-card d-flex align-items-center justify-content-center rounded-4 py-2 text-center flex-grow-1">
+              <p class="m-0">رحلة إلى أرض قوس قزح</p>
+            </div>
+          </div>
+          <div class="card story-card rounded-4">
+            <div class="img-wrapper py-3 px-4">
+              <div class="img rounded-4 overflow-hidden">
+                <img src="./media/images/story-1.png" class="w-100 object-fit-contain" />
+              </div>
+            </div>
+            <div
+              class="text-card d-flex align-items-center justify-content-center rounded-4 py-2 text-center flex-grow-1">
+              <p class="m-0">وقت مغامرة أسنان تيمي</p>
+            </div>
+          </div>
+        </div>
+        <div class="btn left-button p-3 rounded-4 d-flex align-items-center justify-content-center">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="story-page py-2 position-fixed top-50 start-50 translate-middle d-flex flex-column gap-4">
+    <div class="controls p-4 d-flex justify-content-between">
+      <div class="d-flex gap-3 flex-wrap coltrolIcons">
+        <button class="control settings rounded-4">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+        <button class="control volume rounded-4">
+          <i class="fa-solid fa-volume-high volume-icon"></i>
+          <i class="fa-solid fa-volume-xmark volume-icon off"></i>
+        </button>
+      </div>
+      <div class="scoreWrapper col-lg-2 col-md-3 col-6 p-0 my-2">
+        <img src="./media/images/score.svg" class="scoreIcon" />
+        <span class="score"></span>
+      </div>
+    </div>
+    <div class="head py-2">
+      <div class="container">
+        <div class="d-flex align-items-center justify-content-center gap-2 head-text">
+          <div class="icon d-flex align-items-center justify-content-center">
+            <img src="./media/images/pencileIcon.svg" alt="pencile-icon" class="w-100 object-fit-contain" />
+          </div>
+          <div class="">
+            <p class="text m-0 d-inline-block">
+              ماذا يحدث في القصة؟ ضع الصور بالترتيب الصحيح.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="board">
+      <div class="container">
+        <div class="board-items d-flex flex-wrap rounded-4 overflow-hidden">
+          <div class="board-item d-flex justify-content-center align-items-center">
+            <div class="card-number w-100 d-flex justify-content-center align-items-center rounded-4 text-center"
+              droppable="true" draggable="false" data-index="1">
+              ١
+            </div>
+          </div>
+          <div class="board-item d-flex justify-content-center align-items-center">
+            <div class="card-number w-100 d-flex justify-content-center align-items-center rounded-4 text-center"
+              droppable="true" draggable="false" data-index="2">
+              ٢
+            </div>
+          </div>
+          <div class="board-item d-flex justify-content-center align-items-center">
+            <div class="card-number w-100 d-flex justify-content-center align-items-center rounded-4 text-center"
+              droppable="true" draggable="false" data-index="3">
+              ٣
+            </div>
+          </div>
+          <div class="board-item d-flex justify-content-center align-items-center">
+            <div class="card-number w-100 d-flex justify-content-center align-items-center rounded-4 text-center"
+              droppable="true" draggable="false" data-index="4">٤</div>
+          </div>
+          <div class="board-item d-flex justify-content-center align-items-center">
+            <div class="card-number w-100 d-flex justify-content-center align-items-center rounded-4 text-center"
+              droppable="true" draggable="false" data-index="5">٥</div>
+          </div>
+          <div class="board-item d-flex justify-content-center align-items-center">
+            <div class="card-number w-100 d-flex justify-content-center align-items-center rounded-4 text-center"
+              droppable="true" draggable="false" data-index="6">٦</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cards-wrapper">
+      <div class="container">
+        <div class="cards row gap-3 justify-content-center">
+          <div class="card col-md rounded-4">
+            <div class="img-container w-100 h-100 rounded-4 overflow-hidden">
+              <img src="/media/images/card-1.png" class="card-item w-100 h-100 object-fit-contain" data-index="1"
+                draggable="true" />
+            </div>
+          </div>
+          <div class="card col-md rounded-4">
+            <div class="img-container w-100 h-100 rounded-4 overflow-hidden">
+              <img src="/media/images/card-2.png" class="card-item w-100 h-100 object-fit-contain" data-index="3"
+                draggable="true" />
+            </div>
+          </div>
+          <div class="card col-md rounded-4">
+            <div class="img-container w-100 h-100 rounded-4 overflow-hidden">
+              <img src="/media/images/card-3.png" class="card-item w-100 h-100 object-fit-contain" data-index="4"
+                draggable="true" />
+            </div>
+          </div>
+          <div class="card col-md rounded-4">
+            <div class="img-container w-100 h-100 rounded-4 overflow-hidden">
+              <img src="/media/images/card-4.png" class="card-item w-100 h-100 object-fit-contain" data-index="2"
+                draggable="true" />
+            </div>
+          </div>
+          <div class="card col-md rounded-4">
+            <div class="img-container w-100 h-100 rounded-4 overflow-hidden">
+              <img src="/media/images/card-5.png" class="card-item w-100 h-100 object-fit-contain" data-index="6"
+                draggable="true" />
+            </div>
+          </div>
+          <div class="card col-md rounded-4">
+            <div class="img-container w-100 h-100 rounded-4 overflow-hidden">
+              <img src="/media/images/card-6.png" class="card-item w-100 h-100 object-fit-contain" data-index="5"
+                draggable="true" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="success-card rounded-5 p-3">
+    <button class="closeModal rounded-circle">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="card-wrapper h-100 rounded-5">
+      <div class="img-wrapper d-flex justify-content-center align-items-center">
+        <img src="./media/images/bunny.svg" alt="bunny image" class="w-100 object-fit-contain" />
+      </div>
+      <div class="outer-card py-3 rounded-1">
+        <div class="text-card d-flex gap-3 justify-content-center align-items-center">
+          <div class="content d-flex flex-column align-items-center">
+            <span class="message-text">الإجابات الصحيحة</span>
+            <span class="score-text d-flex justify-content-center gap-2 flex-wrap"></span>
+          </div>
+          <div class="score-icon-wrapper">
+            <img src="./media/images/object.svg" alt="score image" class="w-100 object-fit-contain" />
+          </div>
+        </div>
+      </div>
+      <div class="arrows py-4 d-flex justify-content-center gap-5">
+        <button class="left-arrow arrow d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <button class="left-right arrow d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="overlay"></div>
+  <audio id="start-audio" src="./media/audios/audio.mp3"></audio>
+  <audio id="correct-audio" src="./media/audios/audio.mp3"></audio>
+  <audio id="wrong-audio" src="./media/audios/audio.mp3"></audio>
+  <audio id="1" src="./media/audios/audio.mp3"></audio>
+  <audio id="2" src="./media/audios/audio.mp3"></audio>
+  <audio id="3" src="./media/audios/audio.mp3"></audio>
+  <audio id="4" src="./media/audios/audio.mp3"></audio>
+  <audio id="5" src="./media/audios/audio.mp3"></audio>
+  <audio id="6" src="./media/audios/audio.mp3"></audio>
+  <script id="DragDropTouch" src="https://bernardo-castilho.github.io/DragDropTouch/DragDropTouch.js"></script>
+  <script src="./JS/script.js" async></script>
+</body>
+
+</html>
